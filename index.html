@@ -1,81 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <title>CHARIOT - Boutique RDC</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHARIW - Boutique Électronique RDC</title>
     <style>
-        body { background: #f5f5f5; font-family: Arial; margin: 0; padding: 0; }
-        .header { background: #FF6B00; color: white; padding: 15px; text-align: center; font-size: 24px; font-weight: bold; }
-        .slogan { background: #000; color: #FF6B00; padding: 8px; text-align: center; font-size: 14px; }
-        .produits { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; padding: 15px; }
-        .carte { background: white; border-radius: 10px; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .carte img { width: 100%; height: 150px; object-fit: cover; border-radius: 8px; }
-        .prix { color: #FF6B00; font-size: 18px; font-weight: bold; margin: 8px 0; }
-        .nom { font-size: 14px; margin: 5px 0; height: 35px; }
-        .btn { background: #25D366; color: white; padding: 10px; text-decoration: none; border-radius: 8px; display: block; text-align: center; font-weight: bold; }
-        .footer { background: #000; color: #888; text-align: center; padding: 20px; margin-top: 20px; font-size: 12px; }
+        * {margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+        body {background:#f5f5f5}
+        .header {background:#111;color:white;padding:15px;text-align:center}
+        .header h1 {font-size:24px}
+        .header p {font-size:12px;color:#ccc}
+        .grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;padding:10px}
+        .product {background:white;border-radius:8px;overflow:hidden;box-shadow:0 2px 5px rgba(0,0,0,0.1)}
+        .badge {position:absolute;background:#e63946;color:white;padding:3px 8px;font-size:10px;font-weight:bold;border-radius:0 0 5px 0}
+        .product img {width:100%;height:160px;object-fit:cover}
+        .info {padding:10px}
+        .name {font-size:14px;font-weight:bold;height:40px;overflow:hidden}
+        .price {font-size:16px;color:#e63946;font-weight:bold;margin:5px 0}
+        .btn-wa {display:block;background:#25D366;color:white;text-align:center;padding:10px;border-radius:5px;text-decoration:none;font-weight:bold;font-size:13px}
+        .footer {background:#111;color:white;text-align:center;padding:15px;font-size:12px;margin-top:20px}
     </style>
 </head>
 <body>
-    <div class="header">CHARIOT.COM</div>
-    <div class="slogan">La boutique 100% RDC 🇨🇩</div>
-    
-    <div class="produits">
-        
-        <!-- PRODUIT 1 : TU CHANGES ICI -->
-        <div class="carte">
-            <img src="https://via.placeholder.com/300x300/FF6B00/FFFFFF?text=CHAUSSURE" alt="Produit">
-            <div class="nom">Chaussure Nike Air Force</div>
-            <div class="prix">45$</div>
-            <a href="https://wa.me/243977086678?text=Salut%20Michael,%20je%20veux%20commander:%20Chaussure%20Nike%20Air%20Force%20-%2045$" class="btn">Commander sur WhatsApp</a>
-        </div>
 
-        <!-- PRODUIT 2 : TU CHANGES ICI -->
-        <div class="carte">
-            <img src="https://via.placeholder.com/300x300/000000/FFFFFF?text=TELEPHONE" alt="Produit">
-            <div class="nom">Samsung A15 Neuf</div>
-            <div class="prix">120$</div>
-            <a href="https://wa.me/243977086678?text=Salut%20Michael,%20je%20veux%20commander:%20Samsung%20A15%20Neuf%20-%20120$" class="btn">Commander sur WhatsApp</a>
-        </div>
+<div class="header">
+    <h1>CHARIW</h1>
+    <p>Livraison partout en RDC - WhatsApp: +243 977 086 678</p>
+</div>
 
-        <!-- PRODUIT 3 : TU CHANGES ICI -->
-        <div class="carte">
-            <img src="https://via.placeholder.com/300x300/007AFF/FFFFFF?text=T-SHIRT" alt="Produit">
-            <div class="nom">T-Shirt Drip Kinshasa</div>
-            <div class="prix">15$</div>
-            <a href="https://wa.me/243977086678?text=Salut%20Michael,%20je%20veux%20commander:%20T-Shirt%20Drip%20Kinshasa%20-%2015$" class="btn">Commander sur WhatsApp</a>
-        </div>
+<div class="grid">
 
-        <!-- PRODUIT 4 : TU CHANGES ICI -->
-        <div class="carte">
-            <img src="https://via.placeholder.com/300x300/25D366/FFFFFF?text=MONTRE" alt="Produit">
-            <div class="nom">Montre Connectée</div>
-            <div class="prix">35$</div>
-            <a href="https://wa.me/243977086678?text=Salut%20Michael,%20je%20veux%20commander:%20Montre%20Connectée%20-%2035$" class="btn">Commander sur WhatsApp</a>
+    <!-- PRODUIT 1 : SPOT LED SMATRUL 9W TUYA -->
+    <div class="product">
+        <div class="badge">NOUVEAU</div>
+        <img src="https://i.postimg.cc/rFQ9ps4J/7C2A9924-468E-43D5-8E70-D8DD7EAA4C72.jpg" alt="Spot LED SMATRUL 9W WiFi">
+        <div class="info">
+            <div class="name">Spot LED SMATRUL 9W WiFi Tuya/Alexa/Google</div>
+            <div class="price">26$ / pièce</div>
+            <div style="font-size:11px;color:#e63946;font-weight:bold;margin:5px 0;">
+                ⚠️ Commande minimale: 2 pièces = 52$
+            </div>
+            <div style="font-size:11px;color:#666;margin:5px 0;">
+                Noir/Blanc | 350° Rotatif | 3 Tons: Chaud/Neutre/Froid
+            </div>
+            <a href="https://wa.me/243977086678?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20le%20Spot%20SMATRUL%209W%20WiFi.%20Je%20souhaite%20commander%202%20pièces%20pour%2052$.%20Livraison%20en%20RDC%20svp.%20Merci" class="btn-wa">Commander via WhatsApp</a>
         </div>
-
     </div>
 
-    <div class="footer">
-        CHARIOT.COM © 2026 | Paiement Mobile Money RDC<br>
-        WhatsApp: +243 977 086 678 | Kampala & Kinshasa
+    <!-- PRODUIT 2 : CHAUSSURES AIR FORCE -->
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400" alt="Chaussures Air Force">
+        <div class="info">
+            <div class="name">Chaussures Air Force Style Tendance 2026</div>
+            <div class="price">45$ / paire</div>
+            <div style="font-size:11px;color:#e63946;font-weight:bold;margin:5px 0;">
+                ⚠️ Commande minimale: 2 paires = 90$
+            </div>
+            <div style="font-size:11px;color:#666;margin:5px 0;">
+                Tailles: 40-44 | Couleurs: Blanc, Noir
+            </div>
+            <a href="https://wa.me/243977086678?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20les%20Chaussures%20Air%20Force.%20Je%20souhaite%20commander%202%20paires%20pour%2090$.%20Livraison%20en%20RDC%20svp.%20Merci" class="btn-wa">Commander via WhatsApp</a>
+        </div>
     </div>
+
+    <!-- PRODUIT 3 : MONTRE CONNECTÉE -->
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400" alt="Montre Connectée">
+        <div class="info">
+            <div class="name">Montre Connectée Sport Étanche</div>
+            <div class="price">35$ / pièce</div>
+            <div style="font-size:11px;color:#e63946;font-weight:bold;margin:5px 0;">
+                ⚠️ Commande minimale: 2 pièces = 70$
+            </div>
+            <div style="font-size:11px;color:#666;margin:5px 0;">
+                Notifications | Cardio | Batterie 7 jours
+            </div>
+            <a href="https://wa.me/243977086678?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20la%20Montre%20Connectée.%20Je%20souhaite%20commander%202%20pièces%20pour%2070$.%20Livraison%20en%20RDC%20svp.%20Merci" class="btn-wa">Commander via WhatsApp</a>
+        </div>
+    </div>
+
+    <!-- PRODUIT 4 : ÉCOUTEURS BLUETOOTH -->
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=400" alt="Écouteurs Bluetooth">
+        <div class="info">
+            <div class="name">Écouteurs Bluetooth 5.3 Bass+</div>
+            <div class="price">20$ / pièce</div>
+            <div style="font-size:11px;color:#e63946;font-weight:bold;margin:5px 0;">
+                ⚠️ Commande minimale: 2 pièces = 40$
+            </div>
+            <div style="font-size:11px;color:#666;margin:5px 0;">
+                Autonomie 24h | Micro | Boîtier charge
+            </div>
+            <a href="https://wa.me/243977086678?text=Bonjour,%20je%20suis%20intéressé(e)%20par%20les%20Écouteurs%20Bluetooth.%20Je%20souhaite%20commander%202%20pièces%20pour%2040$.%20Livraison%20en%20RDC%20svp.%20Merci" class="btn-wa">Commander via WhatsApp</a>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    © 2026 CHARIW - Livraison partout en RDC | Paiement à la livraison<br>
+    Contact: +243 977 086 678
+</div>
+
 </body>
 </html>
-<!-- PRODUIT SPOT LED SMATRUL 9W TUYA -->
-<div class="product">
-    <div class="badge">HOT 🔥</div>
-    <img src="https://i.postimg.cc/rFQ9ps4J/7C2A9924-468E-43D5-8E70-D8DD7EAA4C72.jpg" alt="Spot LED SMATRUL 9W WiFi">
-    <div class="info">
-        <div class="name">Spot LED SMATRUL 9W WiFi Tuya Alexa Google Home</div>
-        <div class="price">26$ / pièce</div>
-        <div style="font-size:11px;color:#e63946;font-weight:bold;margin:5px 0;">
-            ⚠️ Commande minimale: 2 pièces = 52$
-        </div>
-        <div style="font-size:11px;color:#666;margin:5px 0;">
-            Noir/Blanc | 350° Rotatif | 3 Tons: Warm/Neutral/Cool | Ra>90
-        </div>
-        <a href="https://wa.me/243977086678?text=Salut%20Michael%20mon%20pote,%20je%20commande%20Spot%20SMATRUL%209W%20WiFi%20-%20Quantité:%202%20pièces%20-%2052$%20-%20Couleur:%20Noir%20-%20Livraison:%20Goma/Kinshasa" class="btn-wa">Commander 2 pièces - 52$</a>
-    </div>
-</div>
