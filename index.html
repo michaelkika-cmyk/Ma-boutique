@@ -1,20 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ma Boutique</title>
+    <title>CHARIOT - Boutique RDC</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body { background: #000; color: #00ff00; font-family: Arial; text-align: center; padding: 50px 20px; }
-        .btn { background: #25D366; color: white; padding: 15px 30px; text-decoration: none; border-radius: 10px; font-size: 18px; display: inline-block; margin: 10px; font-weight: bold; }
-        .btn-mail { background: #007AFF; }
+        body { background: #f5f5f5; font-family: Arial; margin: 0; padding: 0; }
+        .header { background: #FF6B00; color: white; padding: 15px; text-align: center; font-size: 24px; font-weight: bold; }
+        .slogan { background: #000; color: #FF6B00; padding: 8px; text-align: center; font-size: 14px; }
+        .produits { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; padding: 15px; }
+        .carte { background: white; border-radius: 10px; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .carte img { width: 100%; height: 150px; object-fit: cover; border-radius: 8px; }
+        .prix { color: #FF6B00; font-size: 18px; font-weight: bold; margin: 8px 0; }
+        .nom { font-size: 14px; margin: 5px 0; height: 35px; }
+        .btn { background: #25D366; color: white; padding: 10px; text-decoration: none; border-radius: 8px; display: block; text-align: center; font-weight: bold; }
+        .footer { background: #000; color: #888; text-align: center; padding: 20px; margin-top: 20px; font-size: 12px; }
     </style>
 </head>
 <body>
-    <h1>🎉 MA BOUTIQUE EST EN LIGNE 🎉</h1>
-    <p>Site créé par Michael</p>
-    <a href="https://wa.me/243977086678?text=Salut%20Michael%2C%20je%20veux%20commander" class="btn">📱 WhatsApp</a>
-    <a href="mailto:michaelkika@icloud.com" class="btn btn-mail">📧 Email</a>
-    <p style="margin-top:40px;color:#888;">+243 977 086 678 | michaelkika@icloud.com</p>
+    <div class="header">CHARIOT.COM</div>
+    <div class="slogan">La boutique 100% RDC 🇨🇩</div>
+    
+    <div class="produits">
+        
+        <!-- PRODUIT 1 : TU CHANGES ICI -->
+        <div class="carte">
+            <img src="https://via.placeholder.com/300x300/FF6B00/FFFFFF?text=CHAUSSURE" alt="Produit">
+            <div class="nom">Chaussure Nike Air Force</div>
+            <div class="prix">45$</div>
+            <a href="https://wa.me/243977086678?text=Salut%20Michael,%20je%20veux%20commander:%20Chaussure%20Nike%20Air%20Force%20-%2045$" class="btn">Commander sur WhatsApp</a>
+        </div>
+
+        <!-- PRODUIT 2 : TU CHANGES ICI -->
+        <div class="carte">
+            <img src="https://via.placeholder.com/300x300/000000/FFFFFF?text=TELEPHONE" alt="Produit">
+            <div class="nom">Samsung A15 Neuf</div>
+            <div class="prix">120$</div>
+            <a href="https://wa.me/243977086678?text=Salut%20Michael,%20je%20veux%20commander:%20Samsung%20A15%20Neuf%20-%20120$" class="btn">Commander sur WhatsApp</a>
+        </div>
+
+        <!-- PRODUIT 3 : TU CHANGES ICI -->
+        <div class="carte">
+            <img src="https://via.placeholder.com/300x300/007AFF/FFFFFF?text=T-SHIRT" alt="Produit">
+            <div class="nom">T-Shirt Drip Kinshasa</div>
+            <div class="prix">15$</div>
+            <a href="https://wa.me/243977086678?text=Salut%20Michael,%20je%20veux%20commander:%20T-Shirt%20Drip%20Kinshasa%20-%2015$" class="btn">Commander sur WhatsApp</a>
+        </div>
+
+        <!-- PRODUIT 4 : TU CHANGES ICI -->
+        <div class="carte">
+            <img src="https://via.placeholder.com/300x300/25D366/FFFFFF?text=MONTRE" alt="Produit">
+            <div class="nom">Montre Connectée</div>
+            <div class="prix">35$</div>
+            <a href="https://wa.me/243977086678?text=Salut%20Michael,%20je%20veux%20commander:%20Montre%20Connectée%20-%2035$" class="btn">Commander sur WhatsApp</a>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        CHARIOT.COM © 2026 | Paiement Mobile Money RDC<br>
+        WhatsApp: +243 977 086 678 | Kampala & Kinshasa
+    </div>
 </body>
 </html>
